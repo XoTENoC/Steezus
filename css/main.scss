@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+@mixin themable($theme-name, $body-bg, $place-bg, $right-bg, $innertext, $button-bg, $text-color) {
+    .#{$theme-name} {
+        background-color: #000000;
+        .cover{
+            height: 100vh;
+            background-color: #000000;
+            background-image: url(../img/cover.jpg);
+            background-size: cover;
+            .topBar{
+                i{
+                    color: #fff;
+                    font-size: 2em;
+                    padding: 20px 0px 0px 20px;
+                }
+                p{
+                    float: right;
+                    background-color: #fff;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 700;
+                    margin: 20px 20px 0px 0px;
+                }
+            }
+        }
+        .gallery{
+            padding-top: 50px;
+            width: 99vh;
+            margin-left: auto;
+            margin-right: auto;
+            h2{
+                font-family: 'Alata', sans-serif;
+                margin-bottom: 2%;
+                font-size: 3em;
+            }
+            .instagram_profile {
+                display: none;
+            }
+              
+            .instagram_profile_image {
+            }
+              
+            .instagram_gallery {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                a{
+                    width: 30%;
+                    img{
+                        margin: 10px;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+            }
+              
+            .instagram_igtv {
+            }
+        }
+    }
+}
+
+@include themable(light, #fff, #c9c9c971, #82aa91, #fff, #bc6a49, #000);

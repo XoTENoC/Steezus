@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/29c774f612.js" crossorigin="anonymous"></script>
+    <title>Steezus</title>
+</head>
+
+<body class="light">
+<div class="cover">
+    <div class="topBar">
+        <i class="fas fa-jedi"></i>
+        <p>$ ' | ' [ - [ - 7 _| _ | $</p>
+    </div>
+</div>
+
+<section class="gallery wrapper" id="gallery">
+    <div id="instagram-feed" class="instagram_feed"></div>
+</section>
+<script src="./js/InstagramFeed.min.js"></script>
+    <script>
+        (function () {
+            new InstagramFeed({
+                'username': 'andrelauthierr',
+                'container': document.getElementById("instagram-feed"),
+                'display_gallery': true,
+                'styling': false,
+                'items': 12,
+            });
+        })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
