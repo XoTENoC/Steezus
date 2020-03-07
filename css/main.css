@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:700&display=swap");
 .light {
   background-color: #000000;
 }
@@ -25,6 +26,22 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   margin: 20px 20px 0px 0px;
+}
+
+.light .cover .title-cover {
+  color: #fff;
+  font-size: 20em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-stretch: expanded;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+}
+
+.light .cover .title-cover p {
+  display: inline-block;
 }
 
 .light .gallery {
@@ -65,5 +82,26 @@
   margin: 10px;
   width: 100%;
   border-radius: 5px;
+}
+
+.light .contact {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  padding-top: 10vh;
+  color: #fff;
+}
+
+.light .contact h2 {
+  color: #fff;
+}
+
+.light .contact input {
+  color: #fff;
+}
+
+.light .footer {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

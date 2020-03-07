@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
 
 @mixin themable($theme-name, $body-bg, $place-bg, $right-bg, $innertext, $button-bg, $text-color) {
     .#{$theme-name} {
@@ -25,6 +26,20 @@
                     margin: 20px 20px 0px 0px;
                 }
             }
+            .title-cover{
+                color: #fff;
+                font-size: 20em;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-stretch: expanded;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30%;
+                p{
+                    display: inline-block;
+                }
+            }
         }
         .gallery{
             padding-top: 50px;
@@ -39,10 +54,6 @@
             .instagram_profile {
                 display: none;
             }
-              
-            .instagram_profile_image {
-            }
-              
             .instagram_gallery {
                 width: 100%;
                 margin-left: auto;
@@ -59,9 +70,23 @@
                     }
                 }
             }
-              
-            .instagram_igtv {
+        }
+        .contact{
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100vh;
+            padding-top: 10vh;
+            color: #fff;
+            h2{
+                color: #fff;
             }
+            input{
+                color: #fff;
+            }
+        }
+        .footer{
+            color: #fff;
         }
     }
 }

@@ -14,16 +14,59 @@
 
 <body class="light">
 <div class="cover">
-    <div class="topBar">
+    <div class="topBar rellax" data-rellax-speed="-7">
         <i class="fas fa-jedi"></i>
         <p>$ ' | ' [ - [ - 7 _| _ | $</p>
     </div>
+    <div class="title-cover">
+        <div class="center rellax" data-rellax-speed="+5">
+        <p>s</p>
+        <p>t</p>
+        <p>e</p>
+        <p>e</p>
+        <p>z</p>
+        <p>u</p>
+        <p>s</p>
+        </div>
+    </div>
 </div>
-
 <section class="gallery wrapper" id="gallery">
     <div id="instagram-feed" class="instagram_feed"></div>
 </section>
+<div class="contact">
+    <h2>Contact</h2>
+    <form action="mailto:Changipro.nathaniel@gmail.com" method="post" enctype="text/plain" class="shrink">
+        <div class="row">
+            <div class="input-field col s6">
+                <input type="text" name="" id="first_name" class="validate">
+                <label for="first_name">Firstname</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="text" name="" id="last_name" class="validate">
+                <label for="last_name">Lastname</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+        <button class="btn waves-effect waves-light teal lighten-2" type="submit" name="action">Submit
+            <i class="fab fa-telegram-plane"></i>
+          </button>
+    </form>
+</div>
+<footer class="footer-copyright">
+</footer>
 <script src="./js/InstagramFeed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script>
         (function () {
             new InstagramFeed({
@@ -34,6 +77,8 @@
                 'items': 12,
             });
         })();
+
+        var rellax = new Rellax('.rellax'); 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
