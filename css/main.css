@@ -10,6 +10,7 @@
   background-color: #000000;
   background-image: url(../img/cover.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .light .cover .topBar i {
@@ -30,7 +31,7 @@
 
 .light .cover .title-cover {
   color: #fff;
-  font-size: 20em;
+  font-size: 10rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -46,8 +47,8 @@
 
 .light .gallery {
   padding-top: 50px;
-  width: 99vh;
   margin-left: auto;
+  width: 50%;
   margin-right: auto;
 }
 

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
 @mixin themable($theme-name, $body-bg, $place-bg, $right-bg, $innertext, $button-bg, $text-color) {
     .#{$theme-name} {
         background-color: #000000;
@@ -10,6 +13,7 @@
             background-color: #000000;
             background-image: url(../img/cover.jpg);
             background-size: cover;
+            background-position: center;
             .topBar{
                 i{
                     color: #fff;
@@ -28,7 +32,7 @@
             }
             .title-cover{
                 color: #fff;
-                font-size: 20em;
+                font-size: 10rem;
                 font-family: 'Oswald', sans-serif;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -43,8 +47,8 @@
         }
         .gallery{
             padding-top: 50px;
-            width: 99vh;
             margin-left: auto;
+            width: 50%;
             margin-right: auto;
             h2{
                 font-family: 'Alata', sans-serif;
@@ -90,5 +94,21 @@
         }
     }
 }
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        .gallery{
+            width: 99%;
+        }
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        .gallery{
+            width: 50%;
+        }
+    }
+  }
 
 @include themable(light, #fff, #c9c9c971, #82aa91, #fff, #bc6a49, #000);
