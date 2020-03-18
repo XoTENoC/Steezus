@@ -30,12 +30,14 @@
         </div>
     </div>
 </div>
-<section class="gallery wrapper" id="gallery">
+<div class="spacer"></div>
+<section class="gallery wrapper rellax" id="gallery" data-rellax-speed="+4">
+    <h2>Gallery</h2>
     <div id="instagram-feed" class="instagram_feed"></div>
 </section>
-<div class="contact">
+<div class="contact rellax" data-rellax-speed="+4">
     <h2>Contact</h2>
-    <form action="mailto:Changipro.nathaniel@gmail.com" method="post" enctype="text/plain" class="shrink">
+    <form action="email.php" method="post" enctype="text/plain" class="shrink">
         <div class="row">
             <div class="input-field col s6">
                 <input type="text" name="" id="first_name" class="validate">
@@ -54,8 +56,8 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Textarea</label>
+              <textarea name="comments" id="textarea1" class="materialize-textarea"></textarea>
+              <label for="comments">Message</label>
             </div>
           </div>
         <button class="btn waves-effect waves-light teal lighten-2" type="submit" name="action">Submit

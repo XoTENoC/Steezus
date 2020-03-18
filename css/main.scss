@@ -7,10 +7,10 @@ $desktop-width: 1024px;
 
 @mixin themable($theme-name, $body-bg, $place-bg, $right-bg, $innertext, $button-bg, $text-color) {
     .#{$theme-name} {
-        background-color: #000000;
+        background-color: $body-bg;
         .cover{
             height: 100vh;
-            background-color: #000000;
+            background-color: $body-bg;
             background-image: url(../img/cover.jpg);
             background-size: cover;
             background-position: center;
@@ -88,11 +88,18 @@ $desktop-width: 1024px;
             input{
                 color: #fff;
             }
+            textarea{
+                color: #fff;
+            }
         }
         .footer{
             color: #fff;
         }
     }
+}
+
+.spacer{
+    height: 500px;
 }
 
 @mixin tablet {
@@ -112,3 +119,4 @@ $desktop-width: 1024px;
   }
 
 @include themable(light, #fff, #c9c9c971, #82aa91, #fff, #bc6a49, #000);
+@include themable(dark, #000, #c9c9c971, #82aa91, #fff, #bc6a49, #000);

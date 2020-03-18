@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:700&display=swap");
+.spacer {
+  height: 500px;
+}
+
 .light {
-  background-color: #000000;
+  background-color: #fff;
 }
 
 .light .cover {
   height: 100vh;
-  background-color: #000000;
+  background-color: #fff;
   background-image: url(../img/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -102,7 +106,120 @@
   color: #fff;
 }
 
+.light .contact textarea {
+  color: #fff;
+}
+
 .light .footer {
+  color: #fff;
+}
+
+.dark {
+  background-color: #000;
+}
+
+.dark .cover {
+  height: 100vh;
+  background-color: #000;
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .cover .topBar i {
+  color: #fff;
+  font-size: 2em;
+  padding: 20px 0px 0px 20px;
+}
+
+.dark .cover .topBar p {
+  float: right;
+  background-color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin: 20px 20px 0px 0px;
+}
+
+.dark .cover .title-cover {
+  color: #fff;
+  font-size: 10rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-stretch: expanded;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+}
+
+.dark .cover .title-cover p {
+  display: inline-block;
+}
+
+.dark .gallery {
+  padding-top: 50px;
+  margin-left: auto;
+  width: 50%;
+  margin-right: auto;
+}
+
+.dark .gallery h2 {
+  font-family: 'Alata', sans-serif;
+  margin-bottom: 2%;
+  font-size: 3em;
+}
+
+.dark .gallery .instagram_profile {
+  display: none;
+}
+
+.dark .gallery .instagram_gallery {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dark .gallery .instagram_gallery a {
+  width: 30%;
+}
+
+.dark .gallery .instagram_gallery a img {
+  margin: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.dark .contact {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  padding-top: 10vh;
+  color: #fff;
+}
+
+.dark .contact h2 {
+  color: #fff;
+}
+
+.dark .contact input {
+  color: #fff;
+}
+
+.dark .contact textarea {
+  color: #fff;
+}
+
+.dark .footer {
   color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
